@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "Command line tool for easily creating RSA certificates",
   "main": "build/forger.js",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/Doth-J/certificate-forger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Doth-J/certificate-forger"
+  },
   "scripts": {
     "build": "tsc",
     "refresh":"npm uninstall -g certificate-forger && npm i -g",
@@ -20,8 +26,10 @@
     "https",
     "pem"
   ],
+  "engines": {
+    "node": ">= 12"
+  },
   "author": "Doth-J",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.13",
     "@types/node-forge": "^1.3.2",
